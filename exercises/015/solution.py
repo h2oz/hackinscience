@@ -9,4 +9,5 @@ import operator
 rr = operator.truediv(245850922, 78256779)
 tt = (1+operator.pow(5, 0.5))/2
 # t= (1+5**0.5)/2
-print(rr, '\n', tt)
+print(rr)
+print(tt)
