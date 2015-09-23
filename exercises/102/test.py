@@ -5,7 +5,7 @@ Created on Wed Sep 23 17:37:19 2015
 @author: A
 """
 from solution import check_my_city   
-check_my_city("Paris")
+check_my_city("lille")
 #    velib = \
 #        [{'address': ('RUE DES CHAMPEAUX (PRES DE LA GARE ROUTIERE)',
 #          '- 93170 BAGNOLET'),
