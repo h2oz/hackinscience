@@ -17,4 +17,3 @@ def affair_meet(liste1, liste2, liste3):
     listecommune = list(set(listep).intersection(liste3))
     listecommune
     print(set(listecommune))
-
