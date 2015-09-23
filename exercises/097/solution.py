@@ -7,7 +7,7 @@ Created on Wed Sep 23 10:56:19 2015
 
 
 def love_meet(liste1, liste2):
-    listecommune = list(set(liste1).intersection(liste2))
+    listecommune = list(set(liste2).intersection(liste1))
     listecommune.sort(key=lambda listecommune: listecommune[1])
     print(set(listecommune))
 
