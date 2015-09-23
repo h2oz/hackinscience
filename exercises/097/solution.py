@@ -28,3 +28,4 @@ def affair_meet(liste1, liste2, liste3):
     listep = list(set(liste1) - set(liste2))
     listecommune = list(set(listep).intersection(liste3))
     print(listecommune)
+    
