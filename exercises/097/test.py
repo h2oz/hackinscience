@@ -5,8 +5,8 @@ Created on Wed Sep 23 11:05:03 2015
 @author: A
 """
 # import sys
-from solution import love_meet
-from solution import affair_meet
+from solution0 import love_meet
+from solution0 import affair_meet
 alice = ['II', 'IV', 'II', 'XIX', 'XV', 'IV', 'II']
 bob = ['IV', 'III', 'II', 'XX', 'II', 'XX']
 silvester = ['XVIII', 'XIX', 'III', 'I', 'III', 'XVIII']
