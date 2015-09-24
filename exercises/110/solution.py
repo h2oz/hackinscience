@@ -30,7 +30,10 @@ ops = ({"+": operator.add, "-": operator.sub, "*": operator.mul,
 if(len(zz) == 4):
     if(is_int(zz[1]) and (type(zz[2]) is str) and
        is_int(zz[3]) and is_ops(zz[2])):
-        print(ops[zz[2]](int(zz[1]), int(zz[3])))
+        if((zz[2] == "/") and (int(zz[3]) == 0)):
+            print("input error")
+        else:
+            print(ops[zz[2]](int(zz[1]), int(zz[3])))
     else:
         print("input error")
 else:
