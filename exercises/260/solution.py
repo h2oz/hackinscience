@@ -19,7 +19,8 @@ def opt_euclidean(a, b):
 
 
 def np_euclidean(a, b):
-    dist = np.euclidean(a, b)
+    #   dist = np.euclidean(a, b)
+    dist = np.sqrt(np.pow((b[0]-a[0]), 2) + np.pow((b[1]-a[1]), 2))
     return(dist)
 
 #    a = [2, 3]
