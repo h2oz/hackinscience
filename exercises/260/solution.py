@@ -28,12 +28,15 @@ def np_euclidean(a, b):
     # pt_1 = np.array((a[0], a[1]))
     # pt_2 = np.array((b[0], b[1]))
     # dist = np.linalg.norm(pt_1-pt_2)
-    dist = np.sqrt(np.power((b[0]-a[0]), 2) + np.power((b[1]-a[1]), 2))
-    return(dist)
+    zz = 0
+    for x in range(len(a)):
+        zz = zz + np.power((a[x]-b[x]), 2)
+    dist = np.sqrt(zz)
+    return(float(dist))
 
-a = [2, 3]
-b = [5, 6]
-print(euclidean(a, b))
-print(opt_euclidean(a, b))
-print(np_euclidean(a, b))
-print(euclidean(a, b) == opt_euclidean(a, b) == np_euclidean(a, b))
+#    a = [2, 3]
+#    b = [5, 6]
+#    print(euclidean(a, b))
+#    print(opt_euclidean(a, b))
+#    print(np_euclidean(a, b))
+#    print(euclidean(a, b) == opt_euclidean(a, b) == np_euclidean(a, b))
