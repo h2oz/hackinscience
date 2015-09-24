@@ -17,6 +17,6 @@ def draw_n_squares(n):
     for i in range(n):
         print('+---', end=""),
     print('+')
-    return("")
+    return ''
 
-print(draw_n_squares(2))
+print(draw_n_squares(3))
