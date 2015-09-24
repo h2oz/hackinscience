@@ -22,4 +22,3 @@ def select_student(liste, note):
     pas['Accepted'] = temp1
     pas['Refused'] = temp2
     print(pas)
-   
