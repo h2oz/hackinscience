@@ -17,13 +17,15 @@ def is_int(s):
         return False
 
 zz = sys.argv
-ops = ({"+": operator.add, "-": operator.sub, "*": operator.mul,
-       "/": operator.truediv, "%": operator.mod, "^": operator.pow})
-if(len(zz) != 4):
+ops = ({"+": operator.add, "-": operator.sub, "\*": operator.mul,
+       "//": operator.truediv, "%": operator.mod, "^": operator.pow})
+if(len(zz) == 4):
+    if(is_int(zz[1]) and (type(zz[2]) is str) and
+       is_int(zz[3])):
+        print(ops[zz[2]](int(zz[1]), int(zz[3])))
+    else:
+        print("input error")
+else:
     print("input error")
-    print(len(zz))
-if(is_int(zz[1]) and (type(zz[2]) is str) and
-   is_int(zz[3])):
-    print(ops[zz[2]](int(zz[1]), int(zz[3])))
-# for i in range(len(zz)):
-#    print(type(zz[i]))
+#   for i in range(len(zz)):
+#   print(type(zz[i]))
