@@ -7,7 +7,7 @@ Created on Thu Sep 24 14:39:26 2015
 
 
 def is_prime(num):
-    for i in range(2, num):
+    for i in range(1, num):
         if(i != num):
             if(num % i == 0):
                 # print(num, i, num % i)
