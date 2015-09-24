@@ -10,4 +10,4 @@ zz = sys.argv
 try:
     print(sys.argv[1])
 except:
-    print('erreur')
+    print('Not enough parameters.')
