@@ -14,16 +14,17 @@ def euclidean(a, b):
 
 
 def opt_euclidean(a, b):
-    dist = math.sqrt(pow((b[0]-a[0]), 2) + pow((b[1]-a[1]), 2))
+    dist = math.sqrt(math.pow((b[0]-a[0]), 2) + math.pow((b[1]-a[1]), 2))
     return(dist)
 
 
 def np_euclidean(a, b):
     #   dist = np.euclidean(a, b)
-    dist = np.sqrt(np.pow((b[0]-a[0]), 2) + np.pow((b[1]-a[1]), 2))
+    dist = np.sqrt(np.power((b[0]-a[0]), 2) + np.power((b[1]-a[1]), 2))
     return(dist)
 
 #    a = [2, 3]
 #    b = [5, 6]
 #    print(euclidean(a, b))
 #    print(opt_euclidean(a, b))
+#    print(np_euclidean(a, b))
