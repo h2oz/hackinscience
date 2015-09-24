@@ -21,4 +21,4 @@ def select_student(liste, note):
             temp2.append(liste[i])
     pas['Accepted'] = temp1
     pas['Refused'] = temp2
-    print(pas)
+    return(pas)
