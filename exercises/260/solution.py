@@ -22,7 +22,7 @@ def np_euclidean(a, b):
     dist = np.euclidean(a, b)
     return(dist)
 
-#a = [2, 3]
-#b = [5, 6]
-#print(euclidean(a, b))
-#print(opt_euclidean(a, b))
+#    a = [2, 3]
+#    b = [5, 6]
+#    print(euclidean(a, b))
+#    print(opt_euclidean(a, b))
