@@ -12,4 +12,4 @@ try:
     # r.encoding
         print((r.text).split('\n', 1)[0])
 except:
-    print('No internet connectivity')
+    print('No internet connectivity.')
