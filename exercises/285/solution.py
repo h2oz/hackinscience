@@ -12,4 +12,4 @@ try:
     # r.encoding
     print(r.text)
 except:
-    print('Not enough parameters.')
+    print('No internet connectivity')
