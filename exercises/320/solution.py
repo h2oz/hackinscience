@@ -24,7 +24,7 @@ for x in range(len(alp)):
 # somme = sum(alp.values())
 for line in range(0, j):
     sline = sline + len(t[line])
-print(somme, sline)
+# print(somme, sline)
 for x in range(len(alp)):
     lettre = list(alp)[x]
     alp[lettre] = alp[lettre]/sline
