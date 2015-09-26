@@ -8,7 +8,7 @@ import json
 # from pprint import pprint
 
 
-def load_jason(path):
+def load_json(path):
     f = open(path, 'r')
     # d = f.readlines()
     f.closed
@@ -17,4 +17,4 @@ def load_jason(path):
     # pprint(d)
     return(d)
 
-load_jason("example.json")
+# load_jason("example.json")
