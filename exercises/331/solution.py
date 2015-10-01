@@ -12,7 +12,7 @@ def load_json(path):
     f = open(path, 'r')
     # d = f.readlines()
     d = json.load(f)
-    f.closed
+    f.close()
     # d = dict(zip(d[0::2], d[1::2]))
     # pprint(d)
     return(d)
@@ -29,16 +29,16 @@ d = load_json("velib.json")
 # print(len(d))
 for i in range(len(d)):
     # print(d[i]['address'])
-    l = d[i]['address'].lstrip()
+    l = d[i]['address'].split()
     m = d[i]['name'].lstrip()
     # print(d[i])
     for j in range(len(l), -1, -1):
         if(test_int(l[j-1])):
             # print(l[j-1:j+4])
             # print(l[j+(5):len(l)])
-            d[i]['zip_code'] = l[j-5:j+1].lstrip()
-            d[i]['city'] = l[j+1:len(l)]
-            d[i]['address'] = (l[0:j-7])
+            d[i]['zip_code'] = l[j-1]
+            d[i]['city'] = " ".join(l[j:len(l)])
+            d[i]['address'] = (" ".join(l[0:j-1])).split(' -')[0]
             break
     for k in range(len(m)):
         if(test_int(m[k])):
@@ -49,7 +49,7 @@ for i in range(len(d)):
             break
         # break
     # d[i].pop('name')
-    # print(d[i])
+    print(d[i])
 g = open("solution.json", 'w')
 json.dump(d, g)
 g.close()
