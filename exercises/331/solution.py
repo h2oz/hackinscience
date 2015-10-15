@@ -41,7 +41,7 @@ for i in range(len(d)):
             d[i]['address'] = (" ".join(l[0:j-1])).split(' -')[0]
             break
     for k in range(len(m)):
-        if(test_int(m[k])) or m[k]=='0':
+        if(test_int(m[k])) or m[k] == '0':
             # print(l[j-1:j+4])
             # print(l[j+(5):len(l)])
             d[i]['name'] = m[k+7:len(m)]
