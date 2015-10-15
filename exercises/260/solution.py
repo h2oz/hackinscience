@@ -22,4 +22,3 @@ def np_euclidean(a, b):
     x = np.array(a[0], a[1])
     y = np.array(b[0], b[1])
     return np.linalg.norm(x - y)
-
