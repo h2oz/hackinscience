@@ -41,16 +41,16 @@ for i in range(len(d)):
             d[i]['address'] = (" ".join(l[0:j-1])).split(' -')[0]
             break
     for k in range(len(m)):
-        if(test_int(m[k])):
+        if(test_int(m[k])) or m[k]=='0':
             # print(l[j-1:j+4])
             # print(l[j+(5):len(l)])
-            d[i]['name'] = m[k+7:len(m)].lstrip()
+            d[i]['name'] = m[k+7:len(m)]
             # print(m)
             break
         # break
     # d[i].pop('name')
     # print(d[i])
-g = open("solution.json", 'w')
+g = open("solution.json", 'w', encoding="utf-8")
 json.dump(d, g)
 g.close()
 # print(((d[i]['address'].split('- ', 1))[1]).split())
