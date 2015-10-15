@@ -11,25 +11,17 @@ al = list(string.ascii_lowercase)
 AL = list(string.ascii_uppercase)
 
 
-def forward(method):
-    if method == 'forward':
-        si = 1
-    else:
-        si = 1
-    return(si)
+def forward():
+    return(1)
 
 
-def backward(method):
-    if method == 'backward':
-        si = -1
-    else:
-        si = 1
-    return(si)
+def backward():
+    return(-1)
 
 
 def caesar_cypher(s, key, method):
     sol = ''
-    si = forward(method) * backward(method)
+    si = locals()["method"]()
     for j in range(len(s)):
         x = s[j]
         if (x not in al) and (x not in AL):
@@ -44,4 +36,4 @@ def caesar_cypher(s, key, method):
     return()
 
 if __name__ == '__main__':
-    caesar_cypher('Python is super disco !', 31, 'backward')
+    caesar_cypher('Python is super disco !', 31, forward)
