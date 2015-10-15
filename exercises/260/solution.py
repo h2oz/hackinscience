@@ -9,22 +9,17 @@ import math
 
 
 def euclidean(a, b):
-    zz = 0
-    for x in range(len(a)):
-        zz = zz + (a[x]-b[x])**2
-    dist = (zz)**0.5
-    return(dist)
+    return ((b[0]-a[0]) ** 2 + (b[1]-a[1]) ** 2) ** 0.5
 
 
 def opt_euclidean(a, b):
-    zz = 0
-    for x in range(len(a)):
-        zz = zz + math.pow((a[x]-b[x]), 2)
-    dist = math.sqrt(zz)
-    return(dist)
+    x = b[0] - a[0]
+    y = b[1] - a[1]
+    return math.hypot(x, y)
 
 
 def np_euclidean(a, b):
+<<<<<<< HEAD
     # pt_1 = np.array((a[0], a[1]))
     # pt_2 = np.array((b[0], b[1]))
     # dist = np.linalg.norm(pt_1-pt_2)
@@ -49,3 +44,8 @@ def np_euclidean(a, b):
 #    print(np_euclidean(a, b))
 #    print(np_euclidean2(a, b))
 #    print(euclidean(a, b) == opt_euclidean(a, b) == np_euclidean(a, b))
+=======
+    x = np.array(a[0], a[1])
+    y = np.array(b[0], b[1])
+    return np.linalg.norm(x - y)
+>>>>>>> origin/master
