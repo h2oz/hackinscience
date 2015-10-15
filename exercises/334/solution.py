@@ -35,7 +35,7 @@ def locate(lat, long):
         if (opt_euclidean(a, b_new) <= opt_euclidean(a, b_old)):
             k = i
     print(d[k])
-    return(k)
+    return()
 
 
-locate(48.83, 2.41)
+# locate(48.83, 2.41)
