@@ -32,7 +32,7 @@ def caesar_cypher(s, key, method):
         for i in range(0, len(al)):
             if x == AL[i]:
                 sol = sol + (AL[(i + (si * key)) % len(al)])
-    print(sol)
+    print("'" + sol + "'")
     return()
 
 if __name__ == '__main__':
