@@ -7,6 +7,7 @@ Created on Thu Sep 24 15:38:36 2015
 import numpy as np
 import math
 
+
 def euclidean(a, b):
     return ((b[0]-a[0]) ** 2 + (b[1]-a[1]) ** 2) ** 0.5
 
