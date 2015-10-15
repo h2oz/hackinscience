@@ -19,4 +19,4 @@ def draw_n_squares(n):
     print('+')
     return ''
 
-print(draw_n_squares(3))
+#print(draw_n_squares(3))
