@@ -49,7 +49,7 @@ for i in range(len(d)):
             break
         # break
     # d[i].pop('name')
-    print(d[i])
+    # print(d[i])
 g = open("solution.json", 'w')
 json.dump(d, g)
 g.close()
