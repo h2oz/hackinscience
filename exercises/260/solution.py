@@ -19,7 +19,6 @@ def opt_euclidean(a, b):
 
 
 def np_euclidean(a, b):
-<<<<<<< HEAD
     # pt_1 = np.array((a[0], a[1]))
     # pt_2 = np.array((b[0], b[1]))
     # dist = np.linalg.norm(pt_1-pt_2)
@@ -44,8 +43,3 @@ def np_euclidean(a, b):
 #    print(np_euclidean(a, b))
 #    print(np_euclidean2(a, b))
 #    print(euclidean(a, b) == opt_euclidean(a, b) == np_euclidean(a, b))
-=======
-    x = np.array(a[0], a[1])
-    y = np.array(b[0], b[1])
-    return np.linalg.norm(x - y)
->>>>>>> origin/master
