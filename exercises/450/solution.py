@@ -32,8 +32,9 @@ def caesar_cypher(s, key, method):
         for i in range(0, len(al)):
             if x == AL[i]:
                 sol = sol + (AL[(i + (si * key)) % len(al)])
-    print("'" + sol + "'")
+    print(sol)
     return()
 
 if __name__ == '__main__':
-    caesar_cypher('Python is super disco !', 31, forward)
+    for x in range(27):
+        caesar_cypher("Udymts nx xzujw inxht !", x, backward)
